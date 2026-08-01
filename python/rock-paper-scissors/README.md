@@ -2,6 +2,10 @@
 
 A console-based Rock Paper Scissors game built with Python.
 
+## 📸 Preview
+
+![Rock Paper Scissors](screenshot.png)
+
 ## Features
 
 - Play until you type `exit`
