@@ -2,6 +2,10 @@
 
 A menu-driven Employee Management System built using **Python** and **JSON** for data storage. This project demonstrates CRUD (Create, Read, Update, Delete) operations along with file handling and structured programming.
 
+## 📸 Preview
+
+![Employee Management System](screenshot.png)
+
 ---
 
 ## 🚀 Features
