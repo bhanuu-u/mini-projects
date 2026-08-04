@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Ram",
+        "salary": 50000,
+        "department": "IT"
+    },
+    {
+        "id": 2,
+        "name": "Sam",
+        "salary": 60000,
+        "department": "backend"
+    },
+    {
+        "id": 3,
+        "name": "bhanu",
+        "salary": 80000,
+        "department": "HR"
+    },
+    {
+        "id": 4,
+        "name": "verma",
+        "salary": 60000,
+        "department": "backend"
+    },
+    {
+        "id": 5,
+        "name": "sharma",
+        "salary": 40000,
+        "department": "Frontend"
+    },
+    {
+        "id": "7",
+        "name": "charan",
+        "salary": "40000",
+        "department": "DATA"
+    }
+]
