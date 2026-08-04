@@ -42,7 +42,7 @@ A simple command-line Typing Speed Test built using Python. This project measure
 
 1. Download or clone this project.
 2. Open the project folder in VS Code.
-3. Run `typing_speed_test.py`.
+3. Run `main.py`.
 
 ---
 
