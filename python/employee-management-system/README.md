@@ -4,7 +4,7 @@ A menu-driven Employee Management System built using **Python** and **JSON** for
 
 ## 📸 Preview
 
-![Employee Management System](screenshot.png)
+![Employee Management System](Screenshot 2026-08-05 002130.png)
 
 ---
 
