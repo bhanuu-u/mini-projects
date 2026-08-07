@@ -33,9 +33,8 @@ This project provides an interactive quiz experience with animated text, a progr
 ```
 python-quiz-game/
 │
-├── quiz.py
+├── Quizz.py
 ├── README.md
-└── LICENSE (optional)
 ```
 
 ---
