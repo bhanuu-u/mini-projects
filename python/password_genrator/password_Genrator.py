@@ -3,9 +3,7 @@ import string
 import pyperclip
 import time
 
-# ----------------------------
-# Password Generator
-# ----------------------------
+
 
 def enhancer(line):
     for i in line:
@@ -18,7 +16,7 @@ MIN_STRONG_LENGTH = 12
 enhancer("=== Secure Password Generator ===")
 enhancer("")
 
-# Get password length
+
 while True:
     try:
         length = int(input("Enter password length: "))
@@ -28,12 +26,12 @@ while True:
     except ValueError:
         enhancer("Please enter a valid number.")
 
-# User choices
+
 use_upper = input("Include uppercase letters? (y/n): ").lower() == "y"
 use_numbers = input("Include numbers? (y/n): ").lower() == "y"
 use_symbols = input("Include symbols? (y/n): ").lower() == "y"
 
-# Build password
+
 password_list = []
 
 # Lowercase is always included
@@ -54,32 +52,30 @@ if use_symbols:
     password_list.append(random.choice(string.punctuation))
     characters += string.punctuation
 
-# Check minimum required length
+
 if length < len(password_list):
     enhancer(f"Password length must be at least {len(password_list)}.")
     exit()
 
-# Fill remaining characters
+
 while len(password_list) < length:
     password_list.append(random.choice(characters))
 
-# Shuffle for randomness
+
 random.shuffle(password_list)
 
-# Final password
+
 password = "".join(password_list)
 
 enhancer("")
 enhancer("Generated Password:")
 enhancer(password)
 
-# Copy to clipboard
+
 pyperclip.copy(password)
 enhancer("Password copied to clipboard!")
 
-# ----------------------------
-# Password Strength Checker
-# ----------------------------
+
 
 check_strength = input("Do you want to check the strength of your password? (y/n): ").lower()
 
