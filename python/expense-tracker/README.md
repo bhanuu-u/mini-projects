@@ -1,66 +1,73 @@
-# 💰 Expense Tracker
+# Expense Tracker
 
 A Python-based Expense Tracker that allows users to record, manage, analyze, and visualize their expenses.
 
-The project uses JSON for data storage, Pandas for data analysis, and Matplotlib and Seaborn for data visualization.
+This project started as a simple expense management application and was gradually extended with JSON file handling, CRUD operations, Pandas-based analysis, and data visualizations.
 
-## 🚀 Features
+## Features
 
-- Add new expenses
+- Add expenses
 - View all expenses
-- Calculate total spending
-- View spending by category
-- Delete expenses
 - Edit existing expenses
+- Delete expenses
+- Store expenses permanently using JSON
 - Automatically record expense dates
-- Daily spending analysis
-- Monthly spending analysis
-- Yearly spending analysis
-- Highest spending analysis
-- Lowest spending analysis
-- Spending summary
-- Multiple data visualizations
-- Persistent data storage using JSON
+- Calculate total spending
+- Analyze daily spending
+- Analyze monthly spending
+- Analyze yearly spending
+- Analyze spending by category
+- Find highest spending
+- Find lowest spending
+- Generate a spending summary
+- Create different visualizations
 
-## 📊 Analysis
+## Analysis
 
-The project provides the following analysis:
+The Analysis section provides:
 
-- Daily Spending
-- Monthly Spending
-- Yearly Spending
-- Spending by Category
-- Highest Spending
-- Lowest Spending
-- Spending Summary
+1. Daily Spending
+2. Monthly Spending
+3. Yearly Spending
+4. Spending by Category
+5. Highest Spending
+6. Lowest Spending
+7. Spending Summary
+8. Visualizations
 
-## 📈 Visualizations
+The analysis functions are separated into a dedicated `analysis.py` file.
 
-The project includes multiple visualizations to understand spending patterns:
+## Visualizations
 
-- Expense Amount vs Day
-- Expense Amount Distribution
-- Category Spending Comparison
-- Spending Distribution by Category
-- Expense Distribution by Category
+The project includes different charts to understand spending patterns and distributions.
 
-## 🛠️ Technologies Used
+The visualization functions are separated into a dedicated `visualizations.py` file.
+
+Visualizations include:
+
+- Line graphs for spending trends
+- Category comparison charts
+- Category distribution charts
+- Expense distribution
+- Expense comparison visualizations
+
+## Technologies Used
 
 - Python
 - Pandas
 - Matplotlib
 - Seaborn
 - JSON
-- OS
+- File Handling
 - Datetime
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 expense-tracker/
 │
 ├── expense_tracker.py
+├── expenses.json
 ├── analysis.py
 ├── visualizations.py
-├── expenses.json
 └── README.md
