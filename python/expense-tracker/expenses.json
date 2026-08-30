@@ -1,0 +1,902 @@
+[
+    {
+        "date": "2025-01-02",
+        "category": "groceries",
+        "description": "fruits",
+        "amount": 3900
+    },
+    {
+        "date": "2025-01-04",
+        "category": "subscription",
+        "description": "Netflix",
+        "amount": 1300
+    },
+    {
+        "date": "2025-01-06",
+        "category": "travel",
+        "description": "trip",
+        "amount": 10450
+    },
+    {
+        "date": "2025-01-10",
+        "category": "education",
+        "description": "books",
+        "amount": 1750
+    },
+    {
+        "date": "2025-01-16",
+        "category": "travel",
+        "description": "train ticket",
+        "amount": 10100
+    },
+    {
+        "date": "2025-01-22",
+        "category": "other",
+        "description": "donation",
+        "amount": 1850
+    },
+    {
+        "date": "2025-01-26",
+        "category": "shopping",
+        "description": "accessories",
+        "amount": 4550
+    },
+    {
+        "date": "2025-02-02",
+        "category": "food",
+        "description": "lunch",
+        "amount": 400
+    },
+    {
+        "date": "2025-02-09",
+        "category": "travel",
+        "description": "trip",
+        "amount": 8100
+    },
+    {
+        "date": "2025-02-16",
+        "category": "entertainment",
+        "description": "movie",
+        "amount": 2050
+    },
+    {
+        "date": "2025-02-21",
+        "category": "groceries",
+        "description": "vegetables",
+        "amount": 2050
+    },
+    {
+        "date": "2025-02-25",
+        "category": "travel",
+        "description": "trip",
+        "amount": 1250
+    },
+    {
+        "date": "2025-03-01",
+        "category": "other",
+        "description": "personal expense",
+        "amount": 2450
+    },
+    {
+        "date": "2025-03-02",
+        "category": "entertainment",
+        "description": "movie",
+        "amount": 600
+    },
+    {
+        "date": "2025-03-04",
+        "category": "subscription",
+        "description": "YouTube",
+        "amount": 150
+    },
+    {
+        "date": "2025-03-05",
+        "category": "entertainment",
+        "description": "outing",
+        "amount": 2850
+    },
+    {
+        "date": "2025-03-19",
+        "category": "shopping",
+        "description": "clothes",
+        "amount": 7250
+    },
+    {
+        "date": "2025-03-22",
+        "category": "groceries",
+        "description": "household items",
+        "amount": 2350
+    },
+    {
+        "date": "2025-03-25",
+        "category": "healthcare",
+        "description": "pharmacy",
+        "amount": 4500
+    },
+    {
+        "date": "2025-03-28",
+        "category": "bills",
+        "description": "mobile bill",
+        "amount": 4050
+    },
+    {
+        "date": "2025-04-04",
+        "category": "food",
+        "description": "lunch",
+        "amount": 500
+    },
+    {
+        "date": "2025-04-05",
+        "category": "healthcare",
+        "description": "pharmacy",
+        "amount": 900
+    },
+    {
+        "date": "2025-04-05",
+        "category": "healthcare",
+        "description": "medicine",
+        "amount": 2050
+    },
+    {
+        "date": "2025-04-06",
+        "category": "entertainment",
+        "description": "game",
+        "amount": 2150
+    },
+    {
+        "date": "2025-04-07",
+        "category": "travel",
+        "description": "trip",
+        "amount": 8900
+    },
+    {
+        "date": "2025-04-11",
+        "category": "food",
+        "description": "snacks",
+        "amount": 2200
+    },
+    {
+        "date": "2025-04-19",
+        "category": "bills",
+        "description": "internet bill",
+        "amount": 4850
+    },
+    {
+        "date": "2025-04-25",
+        "category": "food",
+        "description": "dinner",
+        "amount": 2500
+    },
+    {
+        "date": "2025-04-25",
+        "category": "bills",
+        "description": "internet bill",
+        "amount": 3550
+    },
+    {
+        "date": "2025-04-28",
+        "category": "groceries",
+        "description": "monthly groceries",
+        "amount": 2200
+    },
+    {
+        "date": "2025-04-29",
+        "category": "bills",
+        "description": "mobile bill",
+        "amount": 1900
+    },
+    {
+        "date": "2025-05-09",
+        "category": "shopping",
+        "description": "online shopping",
+        "amount": 6350
+    },
+    {
+        "date": "2025-05-16",
+        "category": "other",
+        "description": "miscellaneous",
+        "amount": 1900
+    },
+    {
+        "date": "2025-05-16",
+        "category": "subscription",
+        "description": "YouTube",
+        "amount": 1500
+    },
+    {
+        "date": "2025-05-27",
+        "category": "bills",
+        "description": "internet bill",
+        "amount": 1650
+    },
+    {
+        "date": "2025-06-04",
+        "category": "entertainment",
+        "description": "game",
+        "amount": 2650
+    },
+    {
+        "date": "2025-06-06",
+        "category": "subscription",
+        "description": "Netflix",
+        "amount": 1300
+    },
+    {
+        "date": "2025-06-08",
+        "category": "entertainment",
+        "description": "game",
+        "amount": 2050
+    },
+    {
+        "date": "2025-06-09",
+        "category": "entertainment",
+        "description": "movie",
+        "amount": 2350
+    },
+    {
+        "date": "2025-06-11",
+        "category": "food",
+        "description": "breakfast",
+        "amount": 1750
+    },
+    {
+        "date": "2025-06-12",
+        "category": "education",
+        "description": "exam fee",
+        "amount": 6250
+    },
+    {
+        "date": "2025-06-13",
+        "category": "healthcare",
+        "description": "pharmacy",
+        "amount": 2450
+    },
+    {
+        "date": "2025-06-13",
+        "category": "healthcare",
+        "description": "medicine",
+        "amount": 4100
+    },
+    {
+        "date": "2025-06-19",
+        "category": "bills",
+        "description": "water bill",
+        "amount": 4150
+    },
+    {
+        "date": "2025-06-20",
+        "category": "healthcare",
+        "description": "health checkup",
+        "amount": 3400
+    },
+    {
+        "date": "2025-06-25",
+        "category": "groceries",
+        "description": "fruits",
+        "amount": 2050
+    },
+    {
+        "date": "2025-07-10",
+        "category": "travel",
+        "description": "bus ticket",
+        "amount": 8100
+    },
+    {
+        "date": "2025-07-14",
+        "category": "groceries",
+        "description": "fruits",
+        "amount": 3350
+    },
+    {
+        "date": "2025-07-14",
+        "category": "bills",
+        "description": "water bill",
+        "amount": 1050
+    },
+    {
+        "date": "2025-07-23",
+        "category": "shopping",
+        "description": "clothes",
+        "amount": 600
+    },
+    {
+        "date": "2025-07-24",
+        "category": "education",
+        "description": "exam fee",
+        "amount": 4950
+    },
+    {
+        "date": "2025-08-04",
+        "category": "subscription",
+        "description": "Spotify",
+        "amount": 400
+    },
+    {
+        "date": "2025-08-05",
+        "category": "other",
+        "description": "repair",
+        "amount": 2900
+    },
+    {
+        "date": "2025-08-05",
+        "category": "groceries",
+        "description": "fruits",
+        "amount": 4900
+    },
+    {
+        "date": "2025-08-06",
+        "category": "education",
+        "description": "stationery",
+        "amount": 5550
+    },
+    {
+        "date": "2025-08-07",
+        "category": "healthcare",
+        "description": "doctor visit",
+        "amount": 650
+    },
+    {
+        "date": "2025-08-07",
+        "category": "groceries",
+        "description": "fruits",
+        "amount": 3500
+    },
+    {
+        "date": "2025-08-08",
+        "category": "travel",
+        "description": "trip",
+        "amount": 5800
+    },
+    {
+        "date": "2025-08-13",
+        "category": "shopping",
+        "description": "accessories",
+        "amount": 6800
+    },
+    {
+        "date": "2025-08-13",
+        "category": "shopping",
+        "description": "accessories",
+        "amount": 6900
+    },
+    {
+        "date": "2025-08-14",
+        "category": "education",
+        "description": "books",
+        "amount": 4050
+    },
+    {
+        "date": "2025-08-22",
+        "category": "entertainment",
+        "description": "game",
+        "amount": 350
+    },
+    {
+        "date": "2025-08-27",
+        "category": "groceries",
+        "description": "vegetables",
+        "amount": 4350
+    },
+    {
+        "date": "2025-08-27",
+        "category": "travel",
+        "description": "cab",
+        "amount": 5350
+    },
+    {
+        "date": "2025-08-29",
+        "category": "healthcare",
+        "description": "doctor visit",
+        "amount": 1050
+    },
+    {
+        "date": "2025-08-31",
+        "category": "shopping",
+        "description": "accessories",
+        "amount": 2550
+    },
+    {
+        "date": "2025-09-02",
+        "category": "bills",
+        "description": "electricity bill",
+        "amount": 3600
+    },
+    {
+        "date": "2025-09-04",
+        "category": "other",
+        "description": "gift",
+        "amount": 350
+    },
+    {
+        "date": "2025-09-06",
+        "category": "education",
+        "description": "course",
+        "amount": 5700
+    },
+    {
+        "date": "2025-09-08",
+        "category": "entertainment",
+        "description": "movie",
+        "amount": 1050
+    },
+    {
+        "date": "2025-09-08",
+        "category": "subscription",
+        "description": "Netflix",
+        "amount": 550
+    },
+    {
+        "date": "2025-09-08",
+        "category": "education",
+        "description": "stationery",
+        "amount": 1400
+    },
+    {
+        "date": "2025-09-11",
+        "category": "entertainment",
+        "description": "concert",
+        "amount": 600
+    },
+    {
+        "date": "2025-09-11",
+        "category": "bills",
+        "description": "water bill",
+        "amount": 5700
+    },
+    {
+        "date": "2025-09-12",
+        "category": "bills",
+        "description": "electricity bill",
+        "amount": 1800
+    },
+    {
+        "date": "2025-09-13",
+        "category": "travel",
+        "description": "hotel",
+        "amount": 6150
+    },
+    {
+        "date": "2025-09-13",
+        "category": "travel",
+        "description": "hotel",
+        "amount": 5000
+    },
+    {
+        "date": "2025-09-25",
+        "category": "entertainment",
+        "description": "game",
+        "amount": 2200
+    },
+    {
+        "date": "2025-09-26",
+        "category": "shopping",
+        "description": "online shopping",
+        "amount": 5950
+    },
+    {
+        "date": "2025-09-27",
+        "category": "groceries",
+        "description": "household items",
+        "amount": 1600
+    },
+    {
+        "date": "2025-09-28",
+        "category": "travel",
+        "description": "bus ticket",
+        "amount": 11850
+    },
+    {
+        "date": "2025-09-29",
+        "category": "healthcare",
+        "description": "pharmacy",
+        "amount": 1100
+    },
+    {
+        "date": "2025-10-13",
+        "category": "education",
+        "description": "online course",
+        "amount": 3200
+    },
+    {
+        "date": "2025-10-13",
+        "category": "subscription",
+        "description": "software",
+        "amount": 1100
+    },
+    {
+        "date": "2025-10-20",
+        "category": "entertainment",
+        "description": "concert",
+        "amount": 1900
+    },
+    {
+        "date": "2025-10-21",
+        "category": "entertainment",
+        "description": "event",
+        "amount": 2950
+    },
+    {
+        "date": "2025-11-03",
+        "category": "travel",
+        "description": "train ticket",
+        "amount": 11700
+    },
+    {
+        "date": "2025-11-16",
+        "category": "healthcare",
+        "description": "pharmacy",
+        "amount": 4550
+    },
+    {
+        "date": "2025-11-18",
+        "category": "travel",
+        "description": "cab",
+        "amount": 9700
+    },
+    {
+        "date": "2025-11-20",
+        "category": "healthcare",
+        "description": "medicine",
+        "amount": 2000
+    },
+    {
+        "date": "2025-11-24",
+        "category": "groceries",
+        "description": "fruits",
+        "amount": 1000
+    },
+    {
+        "date": "2025-11-26",
+        "category": "education",
+        "description": "stationery",
+        "amount": 6150
+    },
+    {
+        "date": "2025-11-28",
+        "category": "education",
+        "description": "books",
+        "amount": 700
+    },
+    {
+        "date": "2025-11-29",
+        "category": "food",
+        "description": "breakfast",
+        "amount": 850
+    },
+    {
+        "date": "2025-12-01",
+        "category": "healthcare",
+        "description": "pharmacy",
+        "amount": 4750
+    },
+    {
+        "date": "2025-12-05",
+        "category": "travel",
+        "description": "train ticket",
+        "amount": 7050
+    },
+    {
+        "date": "2025-12-05",
+        "category": "groceries",
+        "description": "milk",
+        "amount": 3450
+    },
+    {
+        "date": "2025-12-14",
+        "category": "travel",
+        "description": "train ticket",
+        "amount": 3650
+    },
+    {
+        "date": "2025-12-19",
+        "category": "other",
+        "description": "gift",
+        "amount": 900
+    },
+    {
+        "date": "2025-12-20",
+        "category": "subscription",
+        "description": "software",
+        "amount": 750
+    },
+    {
+        "date": "2025-12-29",
+        "category": "healthcare",
+        "description": "health checkup",
+        "amount": 2900
+    },
+    {
+        "date": "2025-12-30",
+        "category": "entertainment",
+        "description": "movie",
+        "amount": 1900
+    },
+    {
+        "date": "2026-01-06",
+        "category": "other",
+        "description": "gift",
+        "amount": 700
+    },
+    {
+        "date": "2026-01-07",
+        "category": "bills",
+        "description": "electricity bill",
+        "amount": 2300
+    },
+    {
+        "date": "2026-01-08",
+        "category": "healthcare",
+        "description": "pharmacy",
+        "amount": 700
+    },
+    {
+        "date": "2026-01-09",
+        "category": "food",
+        "description": "lunch",
+        "amount": 1250
+    },
+    {
+        "date": "2026-01-14",
+        "category": "other",
+        "description": "donation",
+        "amount": 1850
+    },
+    {
+        "date": "2026-01-24",
+        "category": "food",
+        "description": "dinner",
+        "amount": 1350
+    },
+    {
+        "date": "2026-01-24",
+        "category": "shopping",
+        "description": "electronics",
+        "amount": 7550
+    },
+    {
+        "date": "2026-01-27",
+        "category": "food",
+        "description": "lunch",
+        "amount": 1650
+    },
+    {
+        "date": "2026-01-30",
+        "category": "healthcare",
+        "description": "health checkup",
+        "amount": 4100
+    },
+    {
+        "date": "2026-02-13",
+        "category": "subscription",
+        "description": "YouTube",
+        "amount": 500
+    },
+    {
+        "date": "2026-02-14",
+        "category": "groceries",
+        "description": "vegetables",
+        "amount": 2600
+    },
+    {
+        "date": "2026-02-20",
+        "category": "groceries",
+        "description": "monthly groceries",
+        "amount": 500
+    },
+    {
+        "date": "2026-02-21",
+        "category": "other",
+        "description": "donation",
+        "amount": 2450
+    },
+    {
+        "date": "2026-03-01",
+        "category": "other",
+        "description": "miscellaneous",
+        "amount": 700
+    },
+    {
+        "date": "2026-03-09",
+        "category": "shopping",
+        "description": "accessories",
+        "amount": 3850
+    },
+    {
+        "date": "2026-03-14",
+        "category": "groceries",
+        "description": "vegetables",
+        "amount": 550
+    },
+    {
+        "date": "2026-03-15",
+        "category": "other",
+        "description": "repair",
+        "amount": 1350
+    },
+    {
+        "date": "2026-03-17",
+        "category": "shopping",
+        "description": "electronics",
+        "amount": 800
+    },
+    {
+        "date": "2026-03-25",
+        "category": "groceries",
+        "description": "vegetables",
+        "amount": 3350
+    },
+    {
+        "date": "2026-03-25",
+        "category": "groceries",
+        "description": "monthly groceries",
+        "amount": 5000
+    },
+    {
+        "date": "2026-04-10",
+        "category": "subscription",
+        "description": "Spotify",
+        "amount": 350
+    },
+    {
+        "date": "2026-04-10",
+        "category": "food",
+        "description": "cafe",
+        "amount": 2450
+    },
+    {
+        "date": "2026-04-11",
+        "category": "bills",
+        "description": "water bill",
+        "amount": 3500
+    },
+    {
+        "date": "2026-04-13",
+        "category": "shopping",
+        "description": "online shopping",
+        "amount": 6200
+    },
+    {
+        "date": "2026-04-14",
+        "category": "subscription",
+        "description": "YouTube",
+        "amount": 1300
+    },
+    {
+        "date": "2026-04-16",
+        "category": "groceries",
+        "description": "milk",
+        "amount": 1250
+    },
+    {
+        "date": "2026-04-19",
+        "category": "healthcare",
+        "description": "doctor visit",
+        "amount": 2000
+    },
+    {
+        "date": "2026-05-04",
+        "category": "food",
+        "description": "dinner",
+        "amount": 1250
+    },
+    {
+        "date": "2026-05-13",
+        "category": "travel",
+        "description": "hotel",
+        "amount": 10200
+    },
+    {
+        "date": "2026-05-22",
+        "category": "healthcare",
+        "description": "doctor visit",
+        "amount": 1850
+    },
+    {
+        "date": "2026-06-01",
+        "category": "healthcare",
+        "description": "health checkup",
+        "amount": 3800
+    },
+    {
+        "date": "2026-06-02",
+        "category": "education",
+        "description": "books",
+        "amount": 3700
+    },
+    {
+        "date": "2026-06-04",
+        "category": "bills",
+        "description": "water bill",
+        "amount": 5050
+    },
+    {
+        "date": "2026-06-08",
+        "category": "travel",
+        "description": "hotel",
+        "amount": 5400
+    },
+    {
+        "date": "2026-06-26",
+        "category": "bills",
+        "description": "electricity bill",
+        "amount": 4300
+    },
+    {
+        "date": "2026-06-26",
+        "category": "food",
+        "description": "snacks",
+        "amount": 2250
+    },
+    {
+        "date": "2026-07-05",
+        "category": "entertainment",
+        "description": "concert",
+        "amount": 3400
+    },
+    {
+        "date": "2026-07-07",
+        "category": "groceries",
+        "description": "household items",
+        "amount": 500
+    },
+    {
+        "date": "2026-07-13",
+        "category": "travel",
+        "description": "trip",
+        "amount": 8050
+    },
+    {
+        "date": "2026-07-21",
+        "category": "shopping",
+        "description": "electronics",
+        "amount": 3750
+    },
+    {
+        "date": "2026-07-22",
+        "category": "shopping",
+        "description": "accessories",
+        "amount": 2750
+    },
+    {
+        "date": "2026-07-27",
+        "category": "other",
+        "description": "miscellaneous",
+        "amount": 1100
+    },
+    {
+        "date": "2026-07-29",
+        "category": "entertainment",
+        "description": "outing",
+        "amount": 3650
+    },
+    {
+        "date": "2026-07-29",
+        "category": "groceries",
+        "description": "household items",
+        "amount": 2150
+    },
+    {
+        "date": "2026-08-16",
+        "category": "other",
+        "description": "personal expense",
+        "amount": 200
+    },
+    {
+        "date": "2026-08-22",
+        "category": "education",
+        "description": "online course",
+        "amount": 6900
+    },
+    {
+        "date": "2026-08-22",
+        "category": "food",
+        "description": "restaurant",
+        "amount": 1950
+    },
+    {
+        "date": "2026-08-26",
+        "category": "entertainment",
+        "description": "movie",
+        "amount": 200
+    }
+]
