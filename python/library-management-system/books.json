@@ -1,0 +1,62 @@
+[
+    {
+        "bookname": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "available": true
+    },
+    {
+        "bookname": "1984",
+        "author": "George Orwell",
+        "available": true
+    },
+    {
+        "bookname": "The Alchemist",
+        "author": "Paulo Coelho",
+        "available": true
+    },
+    {
+        "bookname": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "available": true
+    },
+    {
+        "bookname": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "available": true
+    },
+    {
+        "bookname": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "available": true
+    },
+    {
+        "bookname": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "available": true
+    },
+    {
+        "bookname": "Atomic Habits",
+        "author": "James Clear",
+        "available": true
+    },
+    {
+        "bookname": "The Psychology of Money",
+        "author": "Morgan Housel",
+        "available": true
+    },
+    {
+        "bookname": "Rich Dad Poor Dad",
+        "author": "Robert Kiyosaki",
+        "available": true
+    },
+    {
+        "bookname": "The Truth",
+        "author": "James gun",
+        "available": true
+    },
+    {
+        "bookname": "The Truth",
+        "author": "James gun",
+        "available": true
+    }
+]
