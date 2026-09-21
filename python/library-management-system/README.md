@@ -30,10 +30,10 @@ The project allows users to manage books through a graphical interface. Book dat
 ```text
 library-management-system/
 │
-├── library_management_system.py
-├── gui.py
+├── README.md
 ├── books.json
-└── README.md
+├── gui.py
+└── library_managemnet_system.py
 
 ## Author 
 **Revanth Bhanu**
