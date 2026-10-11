@@ -11,24 +11,19 @@ warnings.filterwarnings('ignore')
 # ===================== LOAD DATA ========================
 # ========================================================
 
-df = pd.read_csv('insurance.csv')
+df = pd.read_csv('basic_project_1/insurance.csv')
 
 
 # ========================================================
 # ========================= EDA ==========================
 # ========================================================
 
-df.shape
-
-df.head()
-
+print(df.shape)
+print(df.head())
 df.info()
-
-df.describe()
-
-df.isnull().sum()
-
-df.columns
+print(df.describe())
+print(df.isnull().sum())
+print(df.columns)
 
 
 # Distribution of numerical columns
@@ -83,58 +78,38 @@ plt.show()
 
 df_cleaned = df.copy()
 
-df_cleaned.head()
-
-df_cleaned.shape
-
-
 # Remove duplicate rows
-
 df_cleaned.drop_duplicates(inplace=True)
 
-df_cleaned.shape
-
+print(df_cleaned.shape)
 
 # Check missing values
-
-df_cleaned.isnull().sum()
-
+print(df_cleaned.isnull().sum())
 
 # Check data types
-
-df_cleaned.dtypes
+print(df_cleaned.dtypes)
 
 
 # ========================================================
 # =================== ENCODING SEX ========================
 # ========================================================
 
-df_cleaned['sex'].value_counts()
-
 df_cleaned['sex'] = df_cleaned['sex'].map({
     "male": 0,
     "female": 1
 })
-
-df_cleaned.head()
 
 
 # ========================================================
 # ================= ENCODING SMOKER ======================
 # ========================================================
 
-df_cleaned['smoker'].value_counts()
-
 df_cleaned['smoker'] = df_cleaned['smoker'].map({
     "no": 0,
     "yes": 1
 })
 
-df_cleaned
-
-
 # Rename columns
-
 df_cleaned.rename(
     columns={
         'sex': 'is_female',
@@ -143,30 +118,16 @@ df_cleaned.rename(
     inplace=True
 )
 
-df_cleaned.head()
-
 
 # ========================================================
 # ================= ENCODING REGION ======================
 # ========================================================
-
-df['region'].value_counts()
-
 
 df_cleaned = pd.get_dummies(
     df_cleaned,
     columns=['region'],
     drop_first=True
 )
-
-df_cleaned.head()
-
-
-# Convert boolean columns into integers
-
-df_cleaned = df_cleaned.astype(int)
-
-df_cleaned
 
 
 # ========================================================
@@ -190,8 +151,6 @@ df_cleaned['bmi_category'] = pd.cut(
     ]
 )
 
-df_cleaned
-
 
 # Convert BMI categories into dummy variables
 
@@ -204,11 +163,11 @@ df_cleaned = pd.get_dummies(
 
 # Convert boolean columns into integers
 
-df_cleaned = df_cleaned.astype(int)
+bool_columns = df_cleaned.select_dtypes(
+    include='bool'
+).columns
 
-df_cleaned.head()
-
-df_cleaned.columns
+df_cleaned[bool_columns] = df_cleaned[bool_columns].astype(int)
 
 
 # ========================================================
@@ -225,17 +184,12 @@ df_cleaned[cols] = scaler.fit_transform(
     df_cleaned[cols]
 )
 
-df_cleaned.head()
-
 
 # ========================================================
 # ============== PEARSON CORRELATION =====================
 # ========================================================
 
 from scipy.stats import pearsonr
-
-
-# List of features to check against target
 
 selected_features = [
     'age',
@@ -250,9 +204,6 @@ selected_features = [
     'bmi_category_Overweight',
     'bmi_category_Obese'
 ]
-
-
-# Calculate Pearson correlation
 
 correlations = {}
 
@@ -281,13 +232,25 @@ correlation_df = correlation_df.sort_values(
     ascending=False
 )
 
-
 print(correlation_df)
 
 
 # ========================================================
-# ================= CATEGORICAL FEATURES =================
+# =================== CHI-SQUARE TEST ====================
 # ========================================================
+
+from scipy.stats import chi2_contingency
+
+alpha = 0.05
+
+# Divide charges into 4 groups
+
+df_cleaned['charges_bin'] = pd.qcut(
+    df_cleaned['charges'],
+    q=4,
+    labels=False
+)
+
 
 cat_features = [
     'is_female',
@@ -300,27 +263,7 @@ cat_features = [
     'bmi_category_Obese'
 ]
 
-
-# ========================================================
-# ================= CHI-SQUARE TEST ======================
-# ========================================================
-
-from scipy.stats import chi2_contingency
-
-alpha = 0.05
-
-
-# Divide charges into 4 groups
-
-df_cleaned['charges_bin'] = pd.qcut(
-    df_cleaned['charges'],
-    q=4,
-    labels=False
-)
-
-
 chi2_results = {}
-
 
 for col in cat_features:
 
@@ -336,7 +279,7 @@ for col in cat_features:
     decision = (
         'Reject Null (Keep Feature)'
         if p_val < alpha
-        else 'Accept Null (Drop Feature)'
+        else 'Fail to Reject Null (Consider Dropping Feature)'
     )
 
     chi2_results[col] = {
@@ -354,7 +297,6 @@ chi2_df = pd.DataFrame(
 chi2_df = chi2_df.sort_values(
     by='p_value'
 )
-
 
 print(chi2_df)
 
@@ -377,9 +319,58 @@ final_df = df_cleaned[
 ]
 
 
-final_df
+# ========================================================
+# ================= TRAIN-TEST SPLIT =====================
+# ========================================================
+
+from sklearn.model_selection import train_test_split
+
+x = final_df.drop('charges', axis=1)
+y = final_df['charges']
+
+x_train, x_test, y_train, y_test = train_test_split(
+    x,
+    y,
+    test_size=0.2,
+    random_state=42
+)
 
 
-# Original dataframe
+# ========================================================
+# ================= MODEL CREATION ======================
+# ========================================================
 
-df
+from sklearn.linear_model import LinearRegression
+
+model = LinearRegression()
+
+model.fit(x_train, y_train)
+
+print(model)
+
+
+# ========================================================
+# ================= MODEL EVALUATION =====================
+# ========================================================
+
+from sklearn.metrics import r2_score
+
+y_pred = model.predict(x_test)
+
+# R2 Score
+
+r2 = r2_score(y_test, y_pred)
+
+print("R2 Score:", r2)
+
+
+# Adjusted R2 Score
+
+n = x_test.shape[0]
+p = x_test.shape[1]
+
+adjusted_r2 = 1 - (
+    (1 - r2) * (n - 1) / (n - p - 1)
+)
+
+print("Adjusted R2 Score:", adjusted_r2)
