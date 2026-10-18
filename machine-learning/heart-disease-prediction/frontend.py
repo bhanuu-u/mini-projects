@@ -2,14 +2,15 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
 
-# ========================================================
-#                    LOAD MODEL
-# ========================================================
+# Get the folder containing this frontend.py file
+BASE_DIR = Path(__file__).resolve().parent
 
-model = joblib.load('Knn_heart.pkl')
-scaler = joblib.load('scaler.pkl')
-columns = joblib.load('columns.pkl')
+# Load saved model files
+model = joblib.load(BASE_DIR / 'Knn_heart.pkl')
+scaler = joblib.load(BASE_DIR / 'scaler.pkl')
+columns = joblib.load(BASE_DIR / 'columns.pkl')
 
 
 # ========================================================
