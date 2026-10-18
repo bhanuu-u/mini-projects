@@ -7,9 +7,9 @@ import joblib
 #                    LOAD MODEL
 # ========================================================
 
-model = joblib.load('basic_project_2/Knn_heart.pkl')
-scaler = joblib.load('basic_project_2/scaler.pkl')
-columns = joblib.load('basic_project_2/columns.pkl')
+model = joblib.load('Knn_heart.pkl')
+scaler = joblib.load('scaler.pkl')
+columns = joblib.load('columns.pkl')
 
 
 # ========================================================
